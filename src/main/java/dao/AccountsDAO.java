@@ -9,7 +9,7 @@ import model.Account;
 import model.Login;
 
 public class AccountsDAO {
-  private final String JDBC_URL = "jdbc:h2:tcp://localhost/~/sukkiriShop";
+  private final String JDBC_URL = "jdbc:h2:tcp://localhost/~/web_app_test/AttendanceManagement_app";
   private final String DB_USER = "sa";
   private final String DB_PASS = "";
   

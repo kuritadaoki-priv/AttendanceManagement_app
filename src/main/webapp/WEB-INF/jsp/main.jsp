@@ -9,6 +9,5 @@
 </head>
 <body>
 <p>ようこそ<c:out value="${userId}" />さん</p>
-<a href="WelcomeServlet">トップへ</a>
 </body>
 </html>

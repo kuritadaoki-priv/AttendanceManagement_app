@@ -17,7 +17,7 @@ public class LoginServlet extends HttpServlet {
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     // フォワード
-    RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/login.jsp");
+    RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/main.jsp");
     dispatcher.forward(request, response);
   }
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -37,7 +37,7 @@ public class LoginServlet extends HttpServlet {
       HttpSession session = request.getSession();
       session.setAttribute("userId", userId);
       // フォワード
-      RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/loginOK.jsp");
+      RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/main.jsp");
       dispatcher.forward(request, response);
     } else { // ログイン失敗時
       // リダイレクト
